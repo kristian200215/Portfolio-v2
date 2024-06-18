@@ -1,0 +1,778 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #1d2227;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/*BACK GROUND DESIGN */
+.background-home {
+  position: absolute;
+  width: 580px;
+  z-index: 999;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  color: #373f46;
+}
+.background-home h1 {
+  color: #373f46;
+  font-size: 200px;
+  font-weight: 700;
+}
+.background-project {
+  position: absolute;
+  width: 1000px;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  color: #373f46;
+}
+.background-project h1 {
+  color: #373f46;
+  font-size: 150px;
+  font-weight: 700;
+}
+.background-skill {
+  position: absolute;
+  width: 580px;
+  z-index: 999;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  color: #373f46;
+}
+.background-skill h1 {
+  color: #373f46;
+  font-size: 200px;
+  font-weight: 700;
+}
+.background-info {
+  position: absolute;
+  width: 580px;
+  z-index: -1;
+  bottom: 30%;
+  left: -5%;
+  color: #373f46;
+}
+.background-info h1 {
+  color: #373f46;
+  font-size: 100px;
+  font-weight: 700;
+}
+/*BACK GROUND DESIGN END*/
+h1 {
+  margin: 20px;
+  width: 200px;
+  font-size: 50px;
+}
+.heading h2 {
+  font-size: 50px;
+}
+.heading {
+  height: 50dvh;
+  margin-top: 15%;
+  text-align: center;
+}
+.nav-home ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.nav-home ul li {
+  list-style: none;
+}
+.nav-home ul li a {
+  font-size: 20px;
+  text-decoration: none;
+}
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  overflow-x: hidden;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.side-nav img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav ul li {
+  padding: 8px 0px 16px 16px;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+}
+
+.side-nav ul li a:hover {
+  background-color: #575757;
+}
+/* Burger menu styles */
+.burger-menu {
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  display: none; /* Hide by default */
+}
+/* Show the side-nav when active */
+.side-nav.active {
+  transform: translateX(0);
+}
+
+.project {
+  margin: 50px;
+  height: 50dvh;
+}
+.project span {
+  margin: 50px;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.project span a {
+  text-decoration: none;
+}
+.skill {
+  width: 100%;
+  height: 70dvh;
+}
+.card-content {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.card-container .card {
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  background: #1d2227;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(49, 55, 63);
+}
+.card-container h2 {
+  text-align: center;
+}
+.card-container .card .card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+.card-container .card .card-header .exp {
+  text-align: right;
+}
+.card-container .card .card-body p {
+  color: rgb(153, 154, 158);
+  font-size: 20px;
+}
+.card-container .card .card-body span {
+  float: right;
+}
+.card-container .card .card-body h3 {
+  font-weight: 600;
+}
+.info-heading {
+  margin-bottom: 20px;
+}
+.infomation {
+  margin: auto;
+  width: 50%;
+  height: 50dvh;
+}
+.infomation-content {
+  display: flex;
+  justify-content: space-between;
+}
+.infomation-content .left-info {
+  font-size: 20px;
+  width: 50%;
+}
+.infomation-content .left-info p {
+  font-weight: 200;
+}
+.infomation-content .right-info h3 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.infomation-content .right-info p {
+  font-weight: 200;
+}
+.infomation-content .left-info button {
+  --color: #373f46;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #373f46;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+.infomation-content .left-info button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+.infomation-content .left-info button:hover {
+  color: #ffffff;
+}
+.infomation-content .left-info button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+.infomation-content .left-info button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+.infomation-content .left-info button:active:before {
+  background: #1e97cf;
+  transition: background 0s;
+}
+.css-animation {
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer {
+  background-color: #373f46;
+  height: 15dvh;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+}
+footer .creator {
+  text-align: center;
+}
+footer .foot {
+  padding-top: 40px;
+}
+/* Card Hove Effect */
+.card {
+  width: 190px;
+  background: white;
+  padding: 0.4em;
+  border-radius: 6px;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(132, 137, 145);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.card-heading {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  padding: 7px;
+}
+
+.card-heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  color: grey;
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+/* MODAL */
+/* Basic styles */
+.capstone-text {
+  position: relative;
+}
+.ojt-text {
+  position: relative;
+}
+
+.modal-trigger {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.modal-trigger:hover {
+  cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modals-content {
+  background-color: #2b3035;
+  border-radius: 5px;
+  margin: 15% auto;
+  padding: 20px;
+  width: 40%;
+}
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  width: 40%;
+}
+
+.close-button {
+  padding: 10px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+form {
+  padding: 20px;
+  background-color: #373f46;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+}
+form button {
+  float: left;
+  height: 30px;
+}
+
+label {
+  margin-top: 10px;
+}
+input,
+textarea {
+  color: black;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.frame {
+  display: flex;
+}
+.frame .picture {
+  height: auto;
+  width: 200%;
+}
+.frame .picture img {
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Add this to your styles.css file */
+#loadingScreen {
+  display: none; /* Hidden by default */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with some transparency */
+  z-index: 9999; /* Ensure it sits on top */
+  text-align: center;
+}
+
+#loadingScreen .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* TRANSITION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+/* RESPONSIVE*/
+@media (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+  }
+  .hidden {
+    padding: 10px;
+  }
+  .hidden h1 {
+    position: relative;
+    left: 17%;
+    width: 60%;
+    text-align: center;
+  }
+  .hidden .heading h2 {
+    font-size: 30px;
+  }
+  /* Hide the original nav-home */
+  .nav-home {
+    display: none;
+  }
+  /* Style for the side navigation */
+  .side-nav {
+    display: block;
+  }
+  .hidden,
+  .background-home {
+    margin-left: 0; /* Adjust as necessary */
+  }
+  .burger-menu {
+    display: block;
+  }
+  /* Hide the burger menu when active */
+  .burger-menu.hidden {
+    display: none;
+  }
+
+  /* Show the side-nav when active */
+  .side-nav.active {
+    transform: translateX(0);
+  }
+  /* Modal trigger hover effect */
+  .modal-trigger:hover + .modal {
+    display: block;
+    pointer-events: none;
+  }
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill-sec {
+    height: 220dvh;
+  }
+  .background-skill {
+    bottom: 0;
+    z-index: -1;
+  }
+  .info-sec {
+    height: 90dvh;
+  }
+  .infomation-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infomation-content .left-info {
+    width: 100%;
+  }
+  .frame .picture img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+  }
+  .hidden {
+    padding: 10px;
+  }
+  .hidden h1 {
+    position: relative;
+    left: 17%;
+    width: 60%;
+    text-align: center;
+  }
+  .hidden .heading h2 {
+    font-size: 30px;
+  }
+  /* Hide the original nav-home */
+  .nav-home {
+    display: none;
+  }
+
+  .hidden,
+  .background-home {
+    margin-left: 0; /* Adjust as necessary */
+  }
+  /* Burger menu styles */
+  .burger-menu {
+    display: block;
+  }
+
+  /* Hide the burger menu when active */
+  .burger-menu.hidden {
+    display: none;
+  }
+
+  /* Show the side-nav when active */
+  .side-nav.active {
+    transform: translateX(0);
+  }
+  /* Modal trigger hover effect */
+  .modal-trigger:hover + .modal {
+    display: block;
+    pointer-events: none;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-content .card {
+    margin: auto;
+  }
+  .skill-sec {
+    height: 220dvh;
+  }
+  .background-skill {
+    bottom: 0;
+    z-index: -1;
+  }
+  .info-sec {
+    height: 90dvh;
+  }
+  .infomation-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infomation-content .left-info {
+    width: 100%;
+  }
+  .frame .picture img {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+  }
+  .hidden {
+    padding: 10px;
+  }
+  .hidden h1 {
+    position: relative;
+    left: 17%;
+    width: 60%;
+    text-align: center;
+  }
+  .hidden .heading h2 {
+    font-size: 30px;
+  }
+  .burger-menu {
+    display: hidden;
+  }
+  /* Style for the side navigation */
+  .side-nav {
+    display: hidden;
+  }
+
+  .hidden,
+  .background-home {
+    margin-left: 0; /* Adjust as necessary */
+  }
+
+  /* Show the side-nav when active */
+  .side-nav.active {
+    transform: translateX(0);
+  }
+  /* Modal trigger hover effect */
+  .modal-trigger:hover + .modal {
+    display: block;
+    pointer-events: none;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-content .card {
+    margin: auto;
+  }
+  .skill-sec {
+    height: 220dvh;
+  }
+  .background-skill {
+    bottom: 0;
+    z-index: -1;
+  }
+  .info-sec {
+    height: 90dvh;
+  }
+  .infomation-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infomation-content .left-info {
+    width: 100%;
+  }
+  .frame .picture img {
+    display: none;
+  }
+}

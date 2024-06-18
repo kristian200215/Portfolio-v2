@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="app.js"></script>
+    <title>Christian | Portfolio</title>
+  </head>
+  <body>
+    <section class="hidden" data-animation="fadeInUp" data-duration="1s">
+      <h1>WELCOME TO MY PORTFOLIO!</h1>
+      <div class="heading">
+        <h2>SOFTWARE ENGINEER / PROGRAMMER</h2>
+        <div class="nav-home">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#info">INFO</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="background-home">
+        <h1>HOME</h1>
+      </div>
+    </section>
+
+    <!-- Burger menu icon -->
+    <div class="burger-menu" onclick="toggleNav()">&#9776;</div>
+
+    <!-- Side navigation -->
+    <nav class="side-nav" id="sideNav">
+      <img src="img/avatar.jpg" alt="ec" />
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#info">INFO</a></li>
+      </ul>
+    </nav>
+
+    <section class="hidden" data-animation="fadeInLeft" data-duration="1.5s">
+      <div class="project" id="project">
+        <span class="capstone-text"
+          >CAPSTONE<a href="#" class="modal-trigger" data-modal="modal-capstone"
+            >+</a
+          ></span
+        >
+        <span
+          >OJT - Project<a href="#" class="modal-trigger" data-modal="modal-ojt"
+            >+</a
+          ></span
+        >
+        <span
+          >SEMINAR<a href="#" class="modal-trigger" data-modal="modal-seminar"
+            >+</a
+          ></span
+        >
+        <span
+          >OTHER<a href="#" class="modal-trigger" data-modal="modal-other"
+            >+</a
+          ></span
+        >
+      </div>
+      <div class="background-project">
+        <h1>PROJECTS</h1>
+      </div>
+    </section>
+    <section
+      class="hidden skill-sec"
+      data-animation="fadeInRight"
+      data-duration="2s"
+    >
+      <div class="skill" id="skill">
+        <div class="card-container">
+          <div class="card-content">
+            <div class="card">
+              <div class="card-header">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#E65100"
+                    d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                  ></path>
+                  <path
+                    fill="#FF6D00"
+                    d="M24 8L24 39.9 35.2 36.7 37.7 8z"
+                  ></path>
+                  <path
+                    fill="#FFF"
+                    d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+                  ></path>
+                  <path
+                    fill="#EEE"
+                    d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+                  ></path>
+                </svg>
+                <div class="exp">
+                  <p>Experience</p>
+                  <p>1yr</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>HTML</h3>
+                <p>
+                  Been Practicing HTML for a while now, learning the basics and
+                  understanding the fundamentals of it, how to use certain
+                  elements, Creating different web page and interactive sites
+                  without, JavaScript to practice my critical thinking.
+                </p>
+                <span
+                  ><a
+                    href="https://www.w3schools.com/html/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="bi bi-box-arrow-up-right"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#0277BD"
+                    d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                  ></path>
+                  <path
+                    fill="#039BE5"
+                    d="M24 8L24 39.9 35.2 36.7 37.7 8z"
+                  ></path>
+                  <path
+                    fill="#FFF"
+                    d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+                  ></path>
+                  <path
+                    fill="#EEE"
+                    d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+                  ></path>
+                </svg>
+                <div class="exp">
+                  <p>Experience</p>
+                  <p>8mos</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>CSS</h3>
+                <p>
+                  Good at displaying div anywhere on the page and styling the
+                  HTML is my hobby understanding and learning minimal disigns
+                  from the people who are in a Front-end development, learning
+                  responsive webpages and media query.
+                </p>
+                <span
+                  ><a
+                    href="https://www.w3schools.com/css/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="bi bi-box-arrow-up-right"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 80 80"
+                >
+                  <path
+                    fill="#dcd5f2"
+                    d="M40,61.5C18.22,61.5,0.5,51.855,0.5,40S18.22,18.5,40,18.5S79.5,28.145,79.5,40S61.78,61.5,40,61.5z"
+                  ></path>
+                  <path
+                    fill="#8b75a1"
+                    d="M40,19c21.505,0,39,9.421,39,21S61.505,61,40,61S1,51.579,1,40S18.495,19,40,19 M40,18 C17.909,18,0,27.85,0,40s17.909,22,40,22s40-9.85,40-22S62.091,18,40,18L40,18z"
+                  ></path>
+                  <path
+                    fill="#36404d"
+                    d="M25.112 34c1.725 0 3.214.622 4.084 1.706.749.934.981 2.171.668 3.577C29.023 43.074 27.395 44 21.57 44h-4.14l1.75-10H25.112M25.112 32H17.5L14 52h2l1.056-6h4.515c5.863 0 9.053-.905 10.246-6.284C32.842 35.096 29.436 32 25.112 32L25.112 32zM61.112 34c1.725 0 3.214.622 4.084 1.706.749.934.981 2.171.668 3.577C65.023 43.074 63.395 44 57.57 44h-4.14l1.75-10H61.112M61.112 32H53.5L50 52h2l1.056-6h4.515c5.863 0 9.053-.905 10.246-6.284C68.842 35.096 65.436 32 61.112 32L61.112 32z"
+                  ></path>
+                  <g>
+                    <path
+                      fill="#36404d"
+                      d="M49.072,33.212C48.193,32.348,46.644,32,44.334,32h-5.538L40,26h-2.1L34,46h1.99l2.388-12h0.419 h5.538c2.338,0,3.094,0.4,3.335,0.637c0.343,0.338,0.424,1.226,0.217,2.363l-1.767,9h2.106l1.626-8.63 C50.199,35.462,49.936,34.062,49.072,33.212z"
+                    ></path>
+                  </g>
+                </svg>
+                <div class="exp">
+                  <p>Experience</p>
+                  <p>4mos</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>PHP</h3>
+                <p>
+                  I just Started Doing Back-end it expand my interest on the web
+                  development, because having an database on the sites or web
+                  application it filled my satisfaction, I only knew how to get
+                  data on the database just by using terminal, and connecting
+                  php to mysql database.
+                </p>
+                <span
+                  ><a
+                    href="https://www.w3schools.com/php/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="bi bi-box-arrow-up-right"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 48 48"
+                >
+                  <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                  <path
+                    fill="#000001"
+                    d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
+                  ></path>
+                </svg>
+                <div class="exp">
+                  <p>Experience</p>
+                  <p>2mos</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>JavaScript</h3>
+                <p>
+                  I'm on the level of understanding the basics on JavaScript
+                  like datatypes, Variables, Loop, Arrays, Events, Scope, DOM, I
+                  have a lot to learn on JavaScript been interested to this
+                  language lately because of my interest in web development.
+                </p>
+                <span
+                  ><a
+                    href="https://www.w3schools.com/js/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="bi bi-box-arrow-up-right"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="background-skill">
+        <h1>SKILL</h1>
+      </div>
+    </section>
+
+    <section class="css-animation info-sec">
+      <div class="infomation" id="info">
+        <div class="info-heading">
+          <h2>INFORMATION</h2>
+          <p>FRESH GRADUATE SINCE * 2024</p>
+        </div>
+        <div class="infomation-content">
+          <div class="left-info">
+            <p id="typing-text">
+              Hello! My name is Ephraim Christian B. Montero, and I am a recent
+              graduate with a strong academic background and a passionfor
+              continuous learning. Throughout my studies, I have developed a
+              solid foundation in
+              <span style="color: orange">INFORMATION TECHNOLOGY</span> and I am
+              eager to apply my knowledge and skills in a practical, real world
+              setting
+            </p>
+            <button id="hireMeButton">Hire me!</button>
+          </div>
+          <div class="right-info">
+            <h3>Why Choose Me?</h3>
+            <p>Adaptable Learner</p>
+            <p>Team Player</p>
+            <p>Passionate</p>
+            <h3>ROLE</h3>
+            <p>Project Manager</p>
+            <p>Lead UI/UX Designer</p>
+            <h3>RESPONSIBILITY</h3>
+            <p>FRONT-END</p>
+            <p>BACK-END</p>
+            <p>UI/UX Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <div class="logo">
+          <div class="facebook">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#3F51B5"
+                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
+              ></path>
+              <path
+                fill="#FFF"
+                d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"
+              ></path>
+            </svg>
+          </div>
+          <div class="github">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 100 100"
+            >
+              <path
+                fill="#f1bc19"
+                d="M77 12A1 1 0 1 0 77 14A1 1 0 1 0 77 12Z"
+              ></path>
+              <path
+                fill="#e4e4f9"
+                d="M50 13A37 37 0 1 0 50 87A37 37 0 1 0 50 13Z"
+              ></path>
+              <path
+                fill="#f1bc19"
+                d="M83 11A4 4 0 1 0 83 19A4 4 0 1 0 83 11Z"
+              ></path>
+              <path
+                fill="#8889b9"
+                d="M87 22A2 2 0 1 0 87 26A2 2 0 1 0 87 22Z"
+              ></path>
+              <path
+                fill="#fbcd59"
+                d="M81 74A2 2 0 1 0 81 78 2 2 0 1 0 81 74zM15 59A4 4 0 1 0 15 67 4 4 0 1 0 15 59z"
+              ></path>
+              <path
+                fill="#8889b9"
+                d="M25 85A2 2 0 1 0 25 89A2 2 0 1 0 25 85Z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M18.5 49A2.5 2.5 0 1 0 18.5 54 2.5 2.5 0 1 0 18.5 49zM79.5 32A1.5 1.5 0 1 0 79.5 35 1.5 1.5 0 1 0 79.5 32z"
+              ></path>
+              <g>
+                <path
+                  fill="#a3a3cd"
+                  d="M50 25.625A24.25 24.25 0 1 0 50 74.125A24.25 24.25 0 1 0 50 25.625Z"
+                ></path>
+                <path
+                  fill="#472b29"
+                  d="M50,74.825c-13.757,0-24.95-11.192-24.95-24.95S36.243,24.925,50,24.925s24.95,11.192,24.95,24.95 S63.757,74.825,50,74.825z M50,26.325c-12.985,0-23.55,10.564-23.55,23.55S37.015,73.425,50,73.425s23.55-10.564,23.55-23.55 S62.985,26.325,50,26.325z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="#565fa1"
+                  d="M50 29.167A20.5 20.5 0 1 0 50 70.167A20.5 20.5 0 1 0 50 29.167Z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="#472b29"
+                  d="M69.424,44.625c-0.214,0-0.412-0.139-0.478-0.354c-0.088-0.287-0.183-0.571-0.284-0.853 c-0.392-1.094-0.886-2.159-1.47-3.169c-0.139-0.238-0.057-0.545,0.182-0.683c0.239-0.141,0.545-0.057,0.683,0.183 c0.614,1.061,1.134,2.182,1.546,3.331c0.106,0.297,0.206,0.595,0.298,0.897c0.081,0.264-0.067,0.544-0.332,0.625 C69.521,44.618,69.472,44.625,69.424,44.625z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="#472b29"
+                  d="M50,70.75c-11.511,0-20.875-9.337-20.875-20.813S38.489,29.125,50,29.125 c5.975,0,11.674,2.56,15.636,7.023c0.299,0.337,0.588,0.685,0.865,1.041c0.169,0.218,0.13,0.531-0.087,0.701 c-0.218,0.171-0.532,0.131-0.702-0.088c-0.264-0.339-0.54-0.669-0.824-0.99c-3.772-4.25-9.199-6.688-14.888-6.688 c-10.959,0-19.875,8.888-19.875,19.813S39.041,69.75,50,69.75s19.875-8.888,19.875-19.813c0-0.995-0.075-1.996-0.222-2.973 c-0.041-0.272,0.147-0.527,0.42-0.568c0.278-0.045,0.528,0.147,0.569,0.42c0.154,1.025,0.233,2.076,0.233,3.121 C70.875,61.413,61.511,70.75,50,70.75z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="#fefdef"
+                  d="M61.496,42.088c0.365-1.671,0.206-3.743-0.486-5.818c-3.622,0-6.339,2.716-6.339,2.716 s0.016,0.018,0.02,0.023C54.627,39.008,54.565,39,54.5,39h-9c-0.043,0-0.085,0.006-0.128,0.006c0.003-0.004,0.017-0.02,0.017-0.02 s-2.717-2.716-6.339-2.716c-0.684,2.053-0.85,4.104-0.5,5.767C36.973,43.732,36,46,36,48.5c0,5.247,4.253,9.5,9.5,9.5h1.073 c-1.304,0.709-2.246,1.979-2.493,3.498c-1.72,0.232-3.979,0.18-5.028-1.394c-1.811-2.717-2.717-2.717-3.622-2.717 s-0.906,0.906,0,1.811c0.906,0.906,0.906,0.906,1.811,2.717c0.772,1.543,2.812,3.298,6.76,2.663v3.523 c0,0.447,0.079,0.871,0.191,1.282c2.425,0.577,6.502,1.061,11.665-0.151C55.943,68.868,56,68.493,56,68.102v-5.816 c0-1.858-1.047-3.456-2.573-4.286H54.5c5.247,0,9.5-4.253,9.5-9.5C64,46.025,63.046,43.779,61.496,42.088z"
+                ></path>
+                <path
+                  fill="#472b29"
+                  d="M49.532,70.486c-2.23,0-4.075-0.287-5.457-0.616c-0.178-0.042-0.319-0.179-0.367-0.355 c-0.142-0.522-0.208-0.972-0.208-1.413V65.15c-4.563,0.514-6.279-2.154-6.707-3.011c-0.87-1.739-0.87-1.739-1.717-2.587 c-0.701-0.701-0.979-1.458-0.745-2.023c0.169-0.408,0.569-0.642,1.098-0.642c1.217,0,2.219,0.211,4.038,2.939 c0.839,1.258,2.676,1.379,4.193,1.218c0.23-0.978,0.724-1.855,1.423-2.554C39.762,58.272,35.5,53.875,35.5,48.5 c0-2.442,0.891-4.78,2.513-6.613c-0.306-1.722-0.108-3.761,0.564-5.775c0.068-0.204,0.259-0.342,0.474-0.342 c3.357,0,5.931,2.16,6.552,2.73h8.854c0.621-0.57,3.195-2.73,6.552-2.73c0.215,0,0.406,0.138,0.474,0.342 c0.679,2.037,0.872,4.096,0.551,5.83c1.591,1.826,2.465,4.146,2.465,6.559c0,5.375-4.263,9.773-9.585,9.991 c1.001,0.997,1.585,2.354,1.585,3.794v5.816c0,0.392-0.052,0.8-0.158,1.246c-0.043,0.185-0.188,0.328-0.372,0.371 C53.582,70.28,51.419,70.486,49.532,70.486z M44.602,68.965c2.412,0.537,6.153,0.9,10.83-0.148 c0.045-0.253,0.068-0.489,0.068-0.715v-5.816c0-1.597-0.886-3.07-2.312-3.846c-0.201-0.109-0.302-0.341-0.246-0.563 c0.056-0.222,0.256-0.377,0.484-0.377H54.5c4.962,0,9-4.037,9-9c0-2.247-0.843-4.404-2.373-6.074 c-0.11-0.12-0.154-0.286-0.12-0.444c0.331-1.517,0.202-3.352-0.36-5.202c-2.87,0.153-5.098,2.074-5.542,2.484 c-0.091,0.151-0.245,0.246-0.429,0.246c-0.007,0-0.096-0.006-0.103-0.006L45.5,39.5c-0.152,0-0.332-0.067-0.442-0.181l-0.021,0.021 c-0.025-0.024-2.438-2.39-5.623-2.561c-0.557,1.831-0.69,3.649-0.373,5.154c0.034,0.159-0.013,0.325-0.124,0.444 C37.358,44.052,36.5,46.227,36.5,48.5c0,4.963,4.038,9,9,9h1.073c0.229,0,0.428,0.155,0.484,0.377 c0.057,0.222-0.044,0.453-0.246,0.563c-1.205,0.654-2.021,1.799-2.238,3.139c-0.036,0.218-0.208,0.386-0.427,0.415 c-2.664,0.358-4.568-0.198-5.511-1.611c-1.663-2.494-2.412-2.494-3.206-2.494c-0.137,0-0.18,0.032-0.181,0.032 c-0.025,0.064,0.043,0.435,0.534,0.926c0.963,0.963,0.998,1.033,1.905,2.847c0.369,0.736,1.911,3.093,6.233,2.392 c0.147-0.021,0.292,0.019,0.404,0.113c0.111,0.096,0.176,0.234,0.176,0.381v3.523C44.5,68.372,44.533,68.651,44.602,68.965z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="#fefdef"
+                  d="M60.437,51.362c-0.9,1.994-2.876,3.652-6.354,3.93"
+                ></path>
+                <path
+                  fill="#472b29"
+                  d="M54.083,55.542c-0.129,0-0.238-0.1-0.249-0.23c-0.011-0.138,0.091-0.258,0.229-0.269 c3.805-0.305,5.442-2.227,6.146-3.784c0.058-0.127,0.205-0.183,0.331-0.125c0.125,0.057,0.182,0.204,0.125,0.33 c-1.073,2.377-3.403,3.824-6.562,4.077C54.097,55.542,54.09,55.542,54.083,55.542z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="#fefdef"
+                  d="M60.959,47.41c0.111,0.753,0.109,1.552-0.03,2.342"
+                ></path>
+                <path
+                  fill="#472b29"
+                  d="M60.93,50.002c-0.015,0-0.029-0.001-0.044-0.004c-0.136-0.023-0.227-0.153-0.203-0.289 c0.129-0.734,0.139-1.517,0.029-2.263c-0.021-0.136,0.074-0.264,0.21-0.283c0.137-0.02,0.264,0.073,0.284,0.211 c0.12,0.809,0.109,1.624-0.031,2.421C61.155,49.917,61.049,50.002,60.93,50.002z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="#fefdef"
+                  d="M59.083,43.875c0.633,0.451,1.146,1.179,1.488,2.055"
+                ></path>
+                <path
+                  fill="#472b29"
+                  d="M60.571,46.181c-0.1,0-0.194-0.061-0.233-0.159c-0.334-0.856-0.818-1.528-1.4-1.942 c-0.112-0.08-0.139-0.236-0.059-0.349c0.081-0.113,0.236-0.138,0.349-0.06c0.662,0.472,1.207,1.222,1.576,2.169 c0.05,0.129-0.014,0.273-0.142,0.324C60.632,46.175,60.602,46.181,60.571,46.181z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="discord">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 48 48"
+            >
+              <radialGradient
+                id="La9SoowKGoEUHOnYdJMSEa_2mIgusGquJFz_gr1"
+                cx="24"
+                cy="10.009"
+                r="32.252"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#8c9eff"></stop>
+                <stop offset=".368" stop-color="#889af8"></stop>
+                <stop offset=".889" stop-color="#7e8fe6"></stop>
+                <stop offset="1" stop-color="#7b8ce1"></stop>
+              </radialGradient>
+              <path
+                fill="url(#La9SoowKGoEUHOnYdJMSEa_2mIgusGquJFz_gr1)"
+                d="M40.107,12.15c-0.065-0.102-0.139-0.182-0.236-0.255c-0.769-0.578-4.671-3.339-9.665-3.875	c-0.01-0.001-0.048-0.003-0.057-0.003c-0.098,0-0.183,0.057-0.224,0.14l-0.269,0.538c0,0-0.001,0-0.001,0	c-0.017,0.033-0.026,0.071-0.026,0.111c0,0.109,0.07,0.202,0.168,0.236c0.006,0.002,0.048,0.011,0.063,0.014	c4.267,1.028,6.863,2.89,9.149,4.945c-4.047-2.066-8.044-4.001-15.009-4.001s-10.961,1.936-15.009,4.001	c2.286-2.055,4.882-3.917,9.149-4.945c0.015-0.004,0.057-0.012,0.063-0.014c0.098-0.034,0.168-0.127,0.168-0.236	c0-0.04-0.009-0.078-0.026-0.111c0,0-0.001,0-0.001,0l-0.269-0.538c-0.041-0.083-0.125-0.14-0.224-0.14	c-0.009,0-0.048,0.002-0.057,0.003c-4.994,0.536-8.896,3.297-9.665,3.875c-0.097,0.073-0.17,0.153-0.236,0.255	c-0.708,1.107-5.049,8.388-5.892,21.632c-0.009,0.142,0.04,0.289,0.135,0.395c4.592,5.144,11.182,5.752,12.588,5.823	c0.167,0.008,0.327-0.065,0.427-0.199l1.282-1.709c0.1-0.134,0.046-0.322-0.111-0.379c-2.705-0.986-5.717-2.7-8.332-5.706	C11.231,34.457,16.12,37,24,37s12.769-2.543,16.009-4.993c-2.616,3.006-5.627,4.719-8.332,5.706	c-0.157,0.057-0.211,0.245-0.111,0.379l1.282,1.709c0.101,0.134,0.26,0.208,0.427,0.199c1.407-0.072,7.996-0.679,12.588-5.823	c0.095-0.106,0.144-0.253,0.135-0.395C45.156,20.538,40.815,13.257,40.107,12.15z"
+              ></path>
+              <ellipse
+                cx="30.5"
+                cy="26"
+                opacity=".05"
+                rx="4.5"
+                ry="5"
+              ></ellipse>
+              <ellipse
+                cx="30.5"
+                cy="26"
+                opacity=".05"
+                rx="4"
+                ry="4.5"
+              ></ellipse>
+              <ellipse cx="30.5" cy="26" fill="#fff" rx="3.5" ry="4"></ellipse>
+              <ellipse
+                cx="17.5"
+                cy="26"
+                opacity=".05"
+                rx="4.5"
+                ry="5"
+              ></ellipse>
+              <ellipse
+                cx="17.5"
+                cy="26"
+                opacity=".05"
+                rx="4"
+                ry="4.5"
+              ></ellipse>
+              <ellipse cx="17.5" cy="26" fill="#fff" rx="3.5" ry="4"></ellipse>
+            </svg>
+          </div>
+        </div>
+        <div class="creator">
+          <p>Design & Built by Ephraim Christian B. Montero</p>
+          <p>Copyright &copy; 2024 - All right reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div class="modal" id="modal-capstone">
+      <div class="modals-content">
+        <div class="card-image">
+          <img src="img/capstone.jpg" alt="CAPSTONE" />
+        </div>
+        <div class="category">CAPSTONE - Project</div>
+        <div class="card-heading">
+          Face Recognition Online Voting System
+          <p style="color: grey">
+            My Role here is a Full-stack dev, building the Face Recognition
+            Challenges me but luckily got some sources and understand how it
+            works and implemented it on our system, Adding security and
+            validation for our voting system.
+          </p>
+          <div class="author">By <span class="name">EC</span> 2 Dec 2023</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-ojt">
+      <div class="modals-content">
+        <div class="card-image"><img src="img/ojt.jpg" alt="OJT" /></div>
+        <div class="category">OJT - Project</div>
+        <div class="card-heading">
+          Automation Service System for Human Resources Management Office (HRMO)
+          <p style="color: grey">
+            I was a FRONT-End here and a bit of BACK-END cause sometimes they
+            let me fix a bug and add features on the system but 70% i was an
+            FRONT-END it took as a weeks to developed and carefully fix some
+            problem because we are handling an important database especially we
+            are working (OJT) on the Government and trusted us on the Service
+            records because they want to make it digitalize and automatic.
+          </p>
+          <div class="author">By <span class="name">EC</span> 6 March 2023</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-seminar">
+      <div class="modals-content">
+        <div class="card-image"></div>
+        <div class="category">SEMINAR - Project</div>
+        <div class="card-heading">
+          Do List System using HTML - CSS - JavaScript
+          <div class="author">
+            By <span class="name">EC</span> 21 April 2024
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-other">
+      <div class="modals-content">
+        <div class="card-image"></div>
+        <div class="category">Other - Project</div>
+        <div class="card-heading">
+          My other sample of landing page
+          <div class="author">By <span class="name">EC</span> 15 June 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="frame">
+          <div class="picture">
+            <img src="img/avatar.jpg" alt="avatar" />
+          </div>
+          <form>
+            <h2>Contact Me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_template" value="table" />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+      <div class="spinner"></div>
+    </div>
+  </body>
+</html>

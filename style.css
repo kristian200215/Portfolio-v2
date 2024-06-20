@@ -13,7 +13,7 @@ body {
   width: 100%;
   background-color: #1d2227;
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 /*BACK GROUND DESIGN */
 .background-home {
@@ -207,8 +207,8 @@ h1 {
 }
 .infomation {
   margin: auto;
+  margin-bottom: 5%;
   width: 50%;
-  height: 50dvh;
 }
 .infomation-content {
   display: flex;
@@ -622,9 +622,6 @@ button[type="submit"]:hover {
     bottom: 0;
     z-index: -1;
   }
-  .info-sec {
-    height: 90dvh;
-  }
   .infomation-content {
     display: flex;
     flex-wrap: wrap;
@@ -695,9 +692,6 @@ button[type="submit"]:hover {
     bottom: 0;
     z-index: -1;
   }
-  .info-sec {
-    height: 90dvh;
-  }
   .infomation-content {
     display: flex;
     flex-wrap: wrap;
@@ -761,9 +755,6 @@ button[type="submit"]:hover {
   .background-skill {
     bottom: 0;
     z-index: -1;
-  }
-  .info-sec {
-    height: 90dvh;
   }
   .infomation-content {
     display: flex;

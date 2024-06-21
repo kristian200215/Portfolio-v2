@@ -46,7 +46,7 @@ body {
 .background-skill {
   position: absolute;
   width: 580px;
-  z-index: 999;
+  z-index: -1;
   overflow: hidden;
   bottom: 0;
   right: 0;
@@ -618,10 +618,6 @@ button[type="submit"]:hover {
   .skill-sec {
     height: 220dvh;
   }
-  .background-skill {
-    bottom: 0;
-    z-index: -1;
-  }
   .infomation-content {
     display: flex;
     flex-wrap: wrap;
@@ -688,10 +684,6 @@ button[type="submit"]:hover {
   .skill-sec {
     height: 220dvh;
   }
-  .background-skill {
-    bottom: 0;
-    z-index: -1;
-  }
   .infomation-content {
     display: flex;
     flex-wrap: wrap;
@@ -751,10 +743,6 @@ button[type="submit"]:hover {
   }
   .skill-sec {
     height: 220dvh;
-  }
-  .background-skill {
-    bottom: 0;
-    z-index: -1;
   }
   .infomation-content {
     display: flex;

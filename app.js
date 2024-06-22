@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const modal = document.getElementById(modalId);
 
     if (modal) {
-      trigger.addEventListener("mouseover", () => {
+      trigger.addEventListener("click", () => {
         modal.style.display = "block";
       });
     }

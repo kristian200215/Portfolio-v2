@@ -573,14 +573,23 @@ button[type="submit"]:hover {
   .hidden {
     padding: 10px;
   }
-  .hidden h1 {
+  .hidden .backdrop {
     position: relative;
-    left: 17%;
-    width: 60%;
-    text-align: center;
+    left: 10%;
+    text-align: left;
   }
   .hidden .heading h2 {
     font-size: 30px;
+  }
+  .modals-content {
+    margin-top: 50%;
+    width: 80%;
+  }
+  form {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 70%;
   }
   /* Hide the original nav-home */
   .nav-home {
@@ -627,6 +636,9 @@ button[type="submit"]:hover {
   }
   .frame .picture img {
     display: none;
+  }
+  .project {
+    margin: 0;
   }
 }
 @media (max-width: 768px) {
